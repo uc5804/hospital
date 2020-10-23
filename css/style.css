@@ -1,0 +1,173 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Malgun Gothic';
+    src: url('../fonts/MalgunGothic.eot');
+    src: url('../fonts/MalgunGothic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MalgunGothic.woff2') format('woff2'),
+        url('../fonts/MalgunGothic.woff') format('woff'),
+        url('../fonts/MalgunGothic.ttf') format('truetype'),
+        url('../fonts/MalgunGothic.svg#MalgunGothic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{box-sizing: border-box;}
+html, body{font-family: 'Malgun Gothic'; margin: 0; padding: 0;}
+header, section, article, aside, nav, main, footer{display: block;}
+header:after, section:after, article:after, aside:after, nav:after, main:after, footer:after{content:""; display: block; clear: both;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+.clear{clear: both;}
+
+
+header{}
+header .top{height: 40px; background-color: #363636;}
+header .top .wrap{width: 1200px; height: 100%; margin: 0 auto;}
+header .top .wrap .info{float: left; padding-left: 10px;}
+header .top .wrap .info p{color:#ccc; font-size: 14px; line-height: 40px;}
+
+header .top .wrap .link{float: right; padding: 13px 0;}
+header .top .wrap .link ul{}
+header .top .wrap .link ul li{float: left;}
+header .top .wrap .link ul li a{display: block; line-height: 1; border-right:1px solid #ccc; color:#ccc; padding: 0 10px; font-size: 14px; text-transform: uppercase;}
+header .top .wrap .link ul li:last-child a{border:none;}
+header .top .wrap .link ul li:hover a{color:#fff;}
+
+
+header .main{height: 80px; background-color: #fff; position: relative;}
+header .main .wrap{width: 1200px; height: 100%; margin: 0 auto;}
+header .main .wrap .logo{float: left; padding: 10px 0 10px 10px;}
+header .main .wrap .logo a{display: block;}
+header .main .wrap .logo a img{display: block; height: 60px;}
+
+header .main .wrap .menu{float: right;}
+header .main .wrap .menu > ul{padding-right: 10px;}
+header .main .wrap .menu > ul > li{float: left; margin: 0 15px;}
+header .main .wrap .menu > ul > li:last-child{margin-right: 0;}
+header .main .wrap .menu > ul > li > a{display: block;  font-size: 16px; line-height: 1; padding: 32px 0 28px; border-bottom: 4px solid transparent; color:#363636; font-weight: bold;}
+
+header .main .wrap .menu > ul > li:hover > a{border-bottom: 4px solid #004ea1; color:#004ea1;}
+header .main .wrap .menu > ul > li > div{position: absolute; width: 100%; left:0; background-color: rgba(255,255,255,0.66); display: none;}
+header .main .wrap .menu > ul > li:hover > div{display: block;}
+
+header .main .wrap .menu > ul > li > div > ul{width: 1200px; margin: 0 auto; font-size: 0; text-align: right; padding: 0 10px;}
+header .main .wrap .menu > ul > li:nth-child(1) > div > ul {text-align: center;}
+header .main .wrap .menu > ul > li:nth-child(2) > div > ul {text-align: center; padding-left: 120px;}
+header .main .wrap .menu > ul > li > div > ul > li{display: inline-block; margin: 0 20px;}
+header .main .wrap .menu > ul > li > div > ul > li:last-child{margin-right: 0;}
+header .main .wrap .menu > ul > li > div > ul > li > a{display: block; line-height: 40px; font-size: 14px; color:#363636;}
+header .main .wrap .menu > ul > li > div > ul > li:hover > a{color:#004ea1;}
+
+main{height: 280px; background-size: cover; background-image: url(../img/main-02.jpg); background-position: 50% 100%;}
+
+#bottom_btn{padding: 20px 0; background-color: #ddd;}
+#bottom_btn .wrap{width: 1200px; font-size: 0; margin: 0 auto;}
+#bottom_btn .wrap ul{}
+#bottom_btn .wrap ul li{width: calc(100% / 12 - 20px); margin: 0 10px; display: inline-block; vertical-align: top;}
+#bottom_btn .wrap ul li a {display: block;}
+#bottom_btn .wrap ul li a img{display: block; width: 100%;}
+
+#cont1{background-color: #efedef;}
+#cont1 .wrap{width: 1200px; height: auto; margin: 0 auto; font-size: 0; padding-top: 20px;}
+#cont1 .wrap article{width: calc(25% - 20px); height: 280px; margin:0 10px 20px; display: inline-block; vertical-align: top; background-color: #004ea1; background-size: cover; background-position: 50% 50%; padding: 20px;}
+#cont1 .wrap article:nth-child(2n){background-color: #03d365;}
+#cont1 .wrap article:nth-child(3){width: calc(50% - 20px);background-image: url(../img/cont-001.jpg);}
+#cont1 .wrap article:nth-child(4){width: calc(50% - 20px); background-color: #fff;}
+
+#cont1 .wrap article .in_box{width: 100%; height: 100%; position: relative;}
+#cont1 .wrap article .in_box h3{font-size: 36px; color:#fff; line-height: 1;}
+#cont1 .wrap article .in_box p{font-size: 18px; color:#fff; padding-top: 30px; word-break: keep-all;}
+/*word-break: keep-all; 한글, 일문, 중문 캐릭터의 특징은 개별적인 글자를 통해 조합하려는 경향이 있끼 때문에 단어를 기준으로 단어영역을 묶고자 할 때 사용(수수료 10%)*/
+
+#cont1 .wrap article .in_box ul{position: absolute; width: 100%; height: 40px; bottom:0; left:0; border-top:2px solid #fff; border-left:2px solid #fff;}
+#cont1 .wrap article .in_box ul li{display: inline-block; width: 50%; border-right:2px solid #fff; border-bottom: 2px solid #fff;}
+#cont1 .wrap article .in_box ul li a{display: block;line-height: 36px; font-size: 18px; color:#fff; text-align: center; transition: background-color 0.5s;}
+#cont1 .wrap article .in_box ul li:hover a{background-color: rgba(255,255,255,0.4);}
+
+#cont1 .wrap article .in_box .black{color:#363636;}
+#cont1 .wrap article .in_box .search_box{position: absolute; left:0; bottom:0; width: 360px; height: 40px; }
+#cont1 .wrap article .in_box .search_box input{border:2px solid #004ea1; width: calc(100% - 120px); height: 40px; font-size: 18px; padding: 0 10px; display: inline-block; vertical-align: top;}
+
+#cont1 .wrap article .in_box .search_box button{width: 120px; height: 40px; background-color: #004ea1; color:#fff; font-size: 18px; border:none; display: inline-block;vertical-align: top; cursor: pointer;}
+
+#cont1 .wrap article:nth-child(4) .in_box .prize_img{display: inline-block; vertical-align: top; width: 240px; height: 100%; background-image: url(../img/prize.jpg); background-size: cover; background-position: 50% 50%;}
+
+#cont1 .wrap article:nth-child(4) .in_box .prize_txt{display: inline-block; vertical-align: top; width: calc(100% - 260px); height: 100%; margin-left: 20px; position: relative;}
+
+#cont1 .wrap article:nth-child(4) .in_box .prize_txt .black{color:#363636;}
+#cont1 .wrap article:nth-child(4) .in_box .prize_txt p{font-size: 14px; letter-spacing: -1.5px; word-break: keep-all;}
+
+#cont1 .wrap article:nth-child(4) .in_box .prize_txt a{position: absolute; right:0; bottom:0; height: 40px; width: 160px; border:2px solid #004ea1; display: block; line-height: 36px; text-align: center; background-color: #e5e5e5; color:#004ea1; font-size: 18px; transition: background-color 0.5s;}
+#cont1 .wrap article:nth-child(4) .in_box .prize_txt a:hover{background-color: #c5c5c5;}
+
+#banner_01 {height: 464px; background-image: url(../img/health-care.jpg); background-size: cover; background-position: 50% 50%;}
+#banner_01 .wrap {width: 1200px; height: 100%; margin: 0 auto;position: relative; }
+#banner_01 .wrap .banner_cont {position: absolute; 
+top: 50%; width: 340px; right: 150px; transform: translateY(-50%); text-align: center;}
+#banner_01 .wrap .banner_cont h2 {font-size: 36px; color: #363636;padding-bottom: 50px;padding-top: 20px;}
+#banner_01 .wrap .banner_cont img {width: 180px;}
+
+#cont_02{}
+#cont_02 .wrap{width: 1200px; text-align: center; margin: 0 auto;padding: 20px 0;}
+#cont_02 .wrap .sec_title{}
+#cont_02 .wrap .sec_title h3{font-size: 36px; line-height: 60px; color: #363636;}
+#cont_02 .wrap .sec_title p{padding: 20px 0; line-height: 1;font-size: 20px;color: #363636;}
+#cont_02 .wrap .sec_cont{font-size: 0;}
+#cont_02 .wrap .sec_cont .cont_box{display: inline-block;width: calc(25% - 20px); margin: 0 10px 20px; height: 376px; background-size:cover;background-position: 50% 50%; padding: 20px; vertical-align: top;}
+/* #cont_02 .wrap .sec_cont .cont_box:last-child p {padding: 20px 0;}때문에 vertical-align:top */
+#cont_02 .wrap .sec_cont .cont_box:nth-child(1){background-image: url(../img/cont-002.jpg);}
+#cont_02 .wrap .sec_cont .cont_box:nth-child(2){background-image: url(../img/cont-003.jpg);}
+#cont_02 .wrap .sec_cont .cont_box:nth-child(3){background-image: url(../img/cont-004.jpg);}
+#cont_02 .wrap .sec_cont .cont_box:nth-child(4){background-image: url(../img/cont-005.jpg);}
+
+#cont_02 .wrap .sec_cont .cont_box h4 {font-size: 24px; color: #fff; padding-bottom: 20px; padding-top: 40px;}
+
+#cont_02 .wrap .sec_cont .cont_box .bar {width: 80px;height: 4px; background-color: #fff; /*margin: 0 auto;*/ display: inline-block;}
+/*
+일정 공간(width 존재하고 height 존재할 때 ) 을 가로방향으로 가운데 배치하는 방법
+display:block;인 경우, 본인에게 margin: 0 auto를 선언
+display: inline-block; 인 경우, 부모(또는 그 이상)에게 text-align: center를 선언한다. 
+*/
+#cont_02 .wrap .sec_cont .cont_box p {font-size: 18px; color: #fff; padding-top: 20px; padding: 20px; word-break: keep-all;}
+#cont_02 .wrap .sec_cont .cont_box:last-child p {padding: 20px 0;}
+
+#cont_02 .wrap .sec_cont .cont_box ul {width: 120px; margin: 0 auto; border: 2px solid #fff; border-bottom: none;}
+
+#cont_02 .wrap .sec_cont .cont_box ul li a{display: block; line-height: 38px; border-bottom: 2px solid #fff; font-size: 18px;color: #fff; transition: background-color 0.5s;}
+#cont_02 .wrap .sec_cont .cont_box ul li:hover a {background-color: rgba(255,255,255,0.3);}
+
+footer {padding: 20px 0;background-color: #363636; text-align: center; font-size: 0;}
+footer .wrap{width: 1200px; margin: 0 auto; }
+footer .wrap .footer_top {padding-bottom: 20px;}
+footer .wrap .footer_top ul {border-bottom: 1px solid #fff; padding-bottom: 20px;}
+footer .wrap .footer_top ul li {display: inline-block;}
+footer .wrap .footer_top ul li p { line-height: 1; color: #fff; padding: 0 5px; border-right: 1px solid #fff; font-size: 14px;}
+footer .wrap .footer_top ul li:last-child p {border: none;}
+
+footer .wrap .footer_link{}
+footer .wrap .footer_link ul {}
+footer .wrap .footer_link ul li { display: inline-block;}
+footer .wrap .footer_link ul li a{display: block; font-size: 14px; color: #fff; padding: 0 5px; border-right: 1px solid #fff;}
+footer .wrap .footer_link ul li:last-child a {border: none;}
+
+footer .wrap .footer_main {padding-top: 20px;}
+footer .wrap .footer_main .general {font-size: 14px; color: #fff; padding-bottom: 20px;}
+footer .wrap .footer_main img {height: 55px;}
+footer .wrap .footer_main .copyright {font-size: 14px; color: #fff; padding: 20px;}
+
+
+
+@media (max-width:767px){
+    .responsive_768_down_dnone{display: none;}
+}
+/* 
+#test {padding: 20px 0; background-color: #aaffff;}
+#test img {display: inline-block; vertical-align:baseline;}/*text-top, text-bottom*/
+/*
+#text span {display: inline-block; vertical-align: middle;}
+
+#test2 img {dib} */
+
+/*vertical-align: 선언시 상대의 위치를 조정, 강제로 부여된 마진과 패딩은 수직방향의 위치 조정 없이 형제 요소를 함께 내려버리는 역할을 하기 때문에 부여하지 말 것!*/
